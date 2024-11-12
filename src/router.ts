@@ -11,7 +11,7 @@ const routes: RouteRecordRaw[] = [
 
     // math
     {
-        path: '/gcd',
+        path: 'gcd',
         name: 'gcd',
         component: () => import('./pages/GCDPage.vue'),
         meta: {
@@ -21,7 +21,7 @@ const routes: RouteRecordRaw[] = [
 
     // ciphers
     {
-        path: '/simple',
+        path: 'simple',
         name: 'simple',
         component: () => import('./pages/SimpleCipherPage.vue'),
         meta: {
@@ -29,7 +29,7 @@ const routes: RouteRecordRaw[] = [
         }
     },
     {
-        path: '/affine',
+        path: 'affine',
         name: 'affine',
         component: () => import('./pages/AffineCipherPage.vue'),
         meta: {
@@ -37,7 +37,7 @@ const routes: RouteRecordRaw[] = [
         }
     },
     {
-        path: '/autokey',
+        path: 'autokey',
         name: 'autokey',
         component: () => import('./pages/AutoKeyCipherPage.vue'),
         meta: {
@@ -45,7 +45,7 @@ const routes: RouteRecordRaw[] = [
         }
     },
     {
-        path: '/playfair',
+        path: 'playfair',
         name: 'playfair',
         component: () => import('./pages/PlayFairCipherPage.vue'),
         meta: {
@@ -53,7 +53,7 @@ const routes: RouteRecordRaw[] = [
         }
     },
     {
-        path: '/hill',
+        path: 'hill',
         name: 'hill',
         component: () => import('./pages/HillCipherPage.vue'),
         meta: {
@@ -61,7 +61,7 @@ const routes: RouteRecordRaw[] = [
         }
     },
     {
-        path: '/crt',
+        path: 'crt',
         name: 'crt',
         component: () => import('./pages/CRTPage.vue'),
         meta: {
@@ -69,7 +69,7 @@ const routes: RouteRecordRaw[] = [
         }
     },
     {
-        path: '/transposition',
+        path: 'transposition',
         name: 'transposition',
         component: () => import('./pages/TranspositionCipherPage.vue'),
         meta: {
@@ -79,7 +79,7 @@ const routes: RouteRecordRaw[] = [
 
     // brute forcing
     {
-        path: '/brute',
+        path: 'brute',
         name: 'brute',
         meta: {
             layout: DefaultLayout
@@ -90,7 +90,7 @@ const routes: RouteRecordRaw[] = [
         ]
     },
     {
-        path: '/:catchAll(.*)*',
+        path: ':catchAll(.*)*',
         name: '404',
         meta: {
             layout: DefaultLayout,
