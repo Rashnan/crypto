@@ -52,14 +52,14 @@ const routes: RouteRecordRaw[] = [
             layout: DefaultLayout
         }
     },
-    {
-        path: '/hill',
-        name: 'hill',
-        component: () => import('./pages/HillCipherPage.vue'),
-        meta: {
-            layout: DefaultLayout
-        }
-    },
+    // {
+    //     path: '/hill',
+    //     name: 'hill',
+    //     component: () => import('./pages/HillCipherPage.vue'),
+    //     meta: {
+    //         layout: DefaultLayout
+    //     }
+    // },
     {
         path: '/crt',
         name: 'crt',

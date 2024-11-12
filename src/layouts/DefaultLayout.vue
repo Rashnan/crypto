@@ -36,10 +36,10 @@ const items = [
         value: "playfair",
         title: "Playfair Cipher"
     },
-    {
-        value: "hill",
-        title: "Hill Cipher"
-    },
+    // {
+    //     value: "hill",
+    //     title: "Hill Cipher"
+    // },
     {
         value: "transposition",
         title: "Transposition Cipher"
