@@ -5,8 +5,6 @@ import { useRoute, useRouter } from 'vue-router';
 const router = useRouter()
 const route = useRoute()
 
-const open = ref(false)
-
 function selectNavItem(id: string) {
     router.push({ name: id })
 }
