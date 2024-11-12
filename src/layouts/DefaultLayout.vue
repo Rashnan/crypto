@@ -63,8 +63,7 @@ const items = [
 <template>
     <v-layout>
         <v-navigation-drawer
-            v-model="open"
-            md:temporary
+            permanent
         >
             <v-list
                 density="compact"
@@ -78,11 +77,7 @@ const items = [
         <v-app-bar
             density="compact"
             title="Cryptography"
-        >
-            <template v-slot:prepend>
-                <v-app-bar-nav-icon class="d-md-none" @click="open = !open" />
-            </template>
-        </v-app-bar>
+        />
         <v-main>
             <slot />
         </v-main>
