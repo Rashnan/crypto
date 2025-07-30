@@ -10,6 +10,7 @@ import postcssNested from 'postcss-nested'
 // https://vitejs.dev/config/
 export default defineConfig({
   base: '/',
+  // base: '/crypto',
   plugins: [
     vue({...templateCompilerOptions})
   ],

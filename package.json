@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vue-tsc -b && vite build",
     "preview": "vite preview",
-    "predeploy": "npm run build",
+    "predeploy": "npm run build && cp ./vercel-ignore-step.sh ./dist",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
