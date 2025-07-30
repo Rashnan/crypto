@@ -102,7 +102,6 @@ const routes: RouteRecordRaw[] = [
 ]
 
 export const router = createRouter({
-    base: 'crypto',
     history: createWebHistory(),
     routes
 })
