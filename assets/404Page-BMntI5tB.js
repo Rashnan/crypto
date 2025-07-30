@@ -1,0 +1,1 @@
+import{_ as a,a as n,o as c,w as s,b as e,f as r}from"./index-B2TKgbpP.js";const _={};function i(d,l){const t=e("v-card"),o=e("v-sheet");return c(),n(o,{"min-width":"600"},{default:s(()=>[r(t,{title:"Page Not Found",text:"There is no content available at this route.",elevation:"0"})]),_:1})}const h=a(_,[["render",i]]);export{h as default};
