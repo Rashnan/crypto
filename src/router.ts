@@ -2,16 +2,18 @@ import { createWebHistory, createRouter, RouteRecordRaw } from 'vue-router'
 
 import DefaultLayout from './layouts/DefaultLayout.vue'
 
+const basePath = '/crypto/'
+
 const routes: RouteRecordRaw[] = [
     // path: '/',
     {
-        path: '',
+        path: basePath,
         redirect: 'simple'
     },
 
     // math
     {
-        path: '/gcd',
+        path: `${basePath}gcd`,
         name: 'gcd',
         component: () => import('./pages/GCDPage.vue'),
         meta: {
@@ -21,7 +23,7 @@ const routes: RouteRecordRaw[] = [
 
     // ciphers
     {
-        path: '/simple',
+        path: `${basePath}simple`,
         name: 'simple',
         component: () => import('./pages/SimpleCipherPage.vue'),
         meta: {
@@ -29,7 +31,7 @@ const routes: RouteRecordRaw[] = [
         }
     },
     {
-        path: '/affine',
+        path: `${basePath}affine`,
         name: 'affine',
         component: () => import('./pages/AffineCipherPage.vue'),
         meta: {
@@ -37,7 +39,7 @@ const routes: RouteRecordRaw[] = [
         }
     },
     {
-        path: '/autokey',
+        path: `${basePath}autokey`,
         name: 'autokey',
         component: () => import('./pages/AutoKeyCipherPage.vue'),
         meta: {
@@ -45,7 +47,7 @@ const routes: RouteRecordRaw[] = [
         }
     },
     {
-        path: '/playfair',
+        path: `${basePath}playfair`,
         name: 'playfair',
         component: () => import('./pages/PlayFairCipherPage.vue'),
         meta: {
@@ -53,7 +55,7 @@ const routes: RouteRecordRaw[] = [
         }
     },
     // {
-    //     path: '/hill',
+    //     path: `${basePath}hill`,
     //     name: 'hill',
     //     component: () => import('./pages/HillCipherPage.vue'),
     //     meta: {
@@ -61,7 +63,7 @@ const routes: RouteRecordRaw[] = [
     //     }
     // },
     {
-        path: '/crt',
+        path: `${basePath}crt`,
         name: 'crt',
         component: () => import('./pages/CRTPage.vue'),
         meta: {
@@ -69,7 +71,7 @@ const routes: RouteRecordRaw[] = [
         }
     },
     {
-        path: '/transposition',
+        path: `${basePath}transposition`,
         name: 'transposition',
         component: () => import('./pages/TranspositionCipherPage.vue'),
         meta: {
@@ -79,7 +81,7 @@ const routes: RouteRecordRaw[] = [
 
     // brute forcing
     {
-        path: '/brute',
+        path: `${basePath}brute`,
         name: 'brute',
         meta: {
             layout: DefaultLayout
@@ -90,7 +92,7 @@ const routes: RouteRecordRaw[] = [
         ]
     },
     {
-        path: '/:catchAll(.*)*',
+        path: `${basePath}:catchAll(.*)*`,
         name: '404',
         meta: {
             layout: DefaultLayout,
@@ -100,6 +102,7 @@ const routes: RouteRecordRaw[] = [
 ]
 
 export const router = createRouter({
+    base: 'crypto',
     history: createWebHistory(),
     routes
 })
