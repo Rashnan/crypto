@@ -2,13 +2,14 @@ import { createWebHistory, createRouter, RouteRecordRaw } from 'vue-router'
 
 import DefaultLayout from './layouts/DefaultLayout.vue'
 
-const basePath = '/crypto/'
+// const basePath = '/crypto/'
+const basePath = '/'
 
 const routes: RouteRecordRaw[] = [
     // path: '/',
     {
         path: basePath,
-        redirect: 'simple'
+        redirect: `${basePath}simple`
     },
 
     // math
